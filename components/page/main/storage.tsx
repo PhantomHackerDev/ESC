@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Storage: React.FC = () => {
   return (
-    <div className="flex flex-row w-full px-32 bg-cover bg-center items-center justify-center py-3"
+    <div className="flex flex-row w-full px-16 bg-cover bg-center items-center justify-center py-3"
       style={{
         backgroundImage: "url(/img/main_1.png)",
         width: "100%",

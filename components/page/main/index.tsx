@@ -7,6 +7,7 @@ import Feature from "./feature";
 import Capability from "./capability";
 import Detail from "./detail";
 import Storage from "./storage";
+import Why from "./why";
 
 const Main: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const Main: React.FC = () => {
       <Capability />
       <Detail />
       <Storage />
+      <Why />
     </div>
   )
 }
