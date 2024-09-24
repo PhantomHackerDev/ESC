@@ -8,6 +8,7 @@ import Capability from "./capability";
 import Detail from "./detail";
 import Storage from "./storage";
 import Why from "./why";
+import Standard from "./standard";
 
 const Main: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Main: React.FC = () => {
       <Detail />
       <Storage />
       <Why />
+      <Standard />
     </div>
   )
 }
