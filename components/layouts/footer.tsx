@@ -7,7 +7,7 @@ import Image from 'next/image';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#0c0b5b] text-white flex flex-col py-12 w-full">
-      <div className="flex flex-row w-full ml-20 gap-20">
+      <div className="flex flex-row w-full pl-20 gap-20">
         <div className="flex flex-col">
           <Image alt='logo' src={"/img/logo2.png"} width={100} height={100} />
           <div className="flex flex-col">
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Contact Us */}
-          <div className='-mr-4'>
+          <div className='-mr-14'>
             <h3 className="font-semibold text-lg underline">Contact Us</h3>
             <ul className="space-y-2 mt-4">
               <li className="flex items-center space-x-2">
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="container mx-auto flex justify-between items-center border-t border-gray-700 mt-12 pt-4 ">
+      <div className="container mx-auto flex justify-between items-center border-t px-32 border-gray-700 mt-12 pt-4 ">
         <p>© Copyright 2024 | All Rights Reserved.</p>
         <div className="flex space-x-4">
           {/* Add your payment method logos */}

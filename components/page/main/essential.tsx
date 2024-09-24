@@ -3,7 +3,12 @@
 import Image from "next/image";
 import React from "react";
 
-const characteristics = [
+interface Characteristic {
+  imgSrc: string;
+  description: string;
+}
+
+const characteristics: Characteristic[] = [
   {imgSrc:"tempreture.png", description: "-20⁰C to 60⁰C discharge temperature range"},
   {imgSrc:"charge.png", description: "1C – 5C high charge / discharge rate"},
   {imgSrc:"cool.png", description: "No heat generated during cycling"},
@@ -22,7 +27,7 @@ const Essential: React.FC = () => {
       <div className="flex flex-col w-full px-10">
         <div className="grid grid-cols-3 gap-3">
           {
-            characteristics.map((charcter: any, index: number) => (
+            characteristics.map((charcter: Characteristic, index: number) => (
               <div key={index} className="flex flex-row items-center gap-3">
                 <Image alt={charcter.imgSrc} src={`/img/${charcter.imgSrc}`} width={50} height={50} />
                 <p className="text-sm text-gray-400">{charcter.description}</p>

@@ -4,7 +4,7 @@ import React from "react";
 
 const SearchBar: React.FC = () => {
   return (
-    <div className="">
+    <div className="flex">
       <label
         className="text-sm font-medium text-gray-900 sr-only dark:text-white"
       >
@@ -13,10 +13,10 @@ const SearchBar: React.FC = () => {
       <div className="relative">
         <input
           type="search"
-          className="block w-80 p-2 px-7 text-sm text-gray-900 rounded-md bg-gray-100 focus:ring-transparent focus:outline-none"
+          className="block w-80 p-2 px-5 text-sm text-gray-900 rounded-md bg-gray-100 focus:ring-transparent focus:outline-none"
           placeholder="Search..."
         />
-        <div className="absolute bg-[#007AFF] rounded-r-md inset-y-0 end-0 flex items-center px-2">
+        <div className="absolute bg-[#007AFF] rounded-r-md inset-y-0 end-0 flex items-center px-3">
           <svg
             className="w-4 h-4 text-gray-500 dark:text-gray-400"
             aria-hidden="true"

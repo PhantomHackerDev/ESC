@@ -11,7 +11,7 @@ const Standard: React.FC = () => {
       </div>
       <div className="flex flex-col w-3/5 gap-5">
         <p className="text-5xl font-bold text-[#007AFF]">ESC Wall Mount<br /> Standard</p>
-        <p className="text-lg text-gray-400">This energy storage module has a rated voltage range from 58.8V to 42V, with a capacity of 5250Wh. It supports a standard charge and discharge current of 50A, with maximum pulse discharge up to 150A, and operates within temperatures from -20°C to 60°C. With a cycle life of over 50,000 cycles and compatibility with popular inverters like Victron and SMA, it's designed for efficient, long-lasting performance in parallel systems up to 15 modules.</p>
+        <p className="text-lg text-gray-400">{`This energy storage module has a rated voltage range from 58.8V to 42V, with a capacity of 5250Wh. It supports a standard charge and discharge current of 50A, with maximum pulse discharge up to 150A, and operates within temperatures from -20°C to 60°C. With a cycle life of over 50,000 cycles and compatibility with popular inverters like Victron and SMA, it's designed for efficient, long-lasting performance in parallel systems up to 15 modules.`}</p>
         <button className="flex items-center rounded-lg w-1/4 py-3 text-center justify-center bg-[#007AFF]">
           <p className="text-white text-xl">Read More</p>
         </button>
