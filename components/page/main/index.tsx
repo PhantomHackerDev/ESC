@@ -4,6 +4,7 @@ import React from "react";
 import Header from "../../layouts/header";
 import ReadMore from "./readMore";
 import Feature from "./feature";
+import Capability from "./capability";
 
 const Main: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Main: React.FC = () => {
       <Header />
       <ReadMore />
       <Feature />
+      <Capability />
     </div>
   )
 }

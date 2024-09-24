@@ -63,7 +63,7 @@ const ReadMore: React.FC = () => {
               </a>
             </div>
             <div className="absolute items-center j">
-              <a onClick={(e) => { e.preventDefault(); handlePrevClick(); }}>
+              <a onClick={(e) => { e.preventDefault(); handleNextClick(); }}>
                 <Image
                   src="/img/arrow_right.png"
                   width={100}
