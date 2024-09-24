@@ -10,6 +10,8 @@ import Storage from "./storage";
 import Why from "./why";
 import Standard from "./standard";
 import Essential from "./essential";
+import Certificate from "./certificate";
+import Footer from "@/components/layouts/footer";
 
 const Main: React.FC = () => {
   return (
@@ -23,6 +25,8 @@ const Main: React.FC = () => {
       <Why />
       <Standard />
       <Essential />
+      <Certificate />
+      <Footer />
     </div>
   )
 }
