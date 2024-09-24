@@ -27,7 +27,7 @@ const DetailItem: React.FC = () => {
     <div className="bg-[#FEFEFE] flex flex-col p-5 w-[55%]">
       <p className="text-black text-3xl font-bold">ESC Wall Mount<br/>System</p>
       <p className="text-[#007AFF] text-2xl font-semibold">Features:</p>
-      <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside pb-3">
+      <ul className="max-w-md space-y-1 text-gray-500 list-disc list text-sm list-inside pb-3">
         <li>
         Green/Environmentally Friendly
         </li>

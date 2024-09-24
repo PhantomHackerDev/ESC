@@ -14,20 +14,20 @@ const ReadMore: React.FC = () => {
   };
   return (
     <div className="flex flex-col w-full">
-      <div className="relative flex bg-cover bg-center flex-row justify-center py-10 items-center gap-5"
+      <div className="flex bg-cover bg-center flex-row justify-center py-10 items-center gap-5"
         style={{
           backgroundImage: "url(/img/readmore.png)",
           width: "100%",
-          height: "100%",
+          height: "450px",
           backgroundSize: "100% 100%",
         }}
       >
         <div className="flex flex-row justify-center  items-center">
           <div className="flex flex-col gap-5">
-            <p className="text-white text-5xl text-center">
-              No Thermal &nbsp; Runaway  &nbsp; No &nbsp; Fires<br/> 30,000+ Full Discharge/Recharge Cycles<br/> 20 - 30 Year Expected Lifespan<br/> UL310A Certified
+            <p className="text-white text-4xl">
+              No Thermal Runaway  No Fires<br/> 30,000+ Full Discharge/Recharge Cycles<br/> 20 - 30 Year Expected Lifespan<br/> UL310A Certified
             </p>
-            <div className="flex px-16">
+            <div className="flex">
               <div className="flex flex-col gap-5 left-4">
                 <p className="text-white text-[10px]">
                   Electron Storage Corporation (ESC) delivers cutting-edge energy storage<br/> technologies for a cleaner, sustainable world.
@@ -39,42 +39,42 @@ const ReadMore: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex">
+          <div className="flex ">
             <div className="flex items-center justify-between ">
               <div className="flex">
                 <Image
                   src={`/img/${electron[currentIndex]}`}
-                  width={400}
-                  height={400}
+                  width={350}
+                  height={350}
                   alt={`${electron[currentIndex]}`}
                   className=""
                 />
               </div>
             </div>
-            <div className="absolute">
-              <a onClick={(e) => { e.preventDefault(); handlePrevClick(); }}>
-                <Image
-                  src="/img/arrow_right.png"
-                  width={100}
-                  height={100}
-                  alt="arrow.png"
-                  className=" w-[50px] h-auto mt-64 rotate-180"
-                />
-              </a>
-            </div>
-            <div className="absolute items-center j">
-              <a onClick={(e) => { e.preventDefault(); handleNextClick(); }}>
-                <Image
-                  src="/img/arrow_right.png"
-                  width={100}
-                  height={100}
-                  alt="arrow.png"
-                  className=" w-[50px] mt-64 ml-[340px] h-auto"
-                />
-              </a>
-            </div>
           </div>
         </div>
+            <div className="absolute">
+              <p onClick={(e) => { e.preventDefault(); handlePrevClick(); }}>
+                <Image
+                  src="/img/arrow_right.png"
+                  width={100}
+                  height={100}
+                  alt="arrow.png"
+                  className=" w-[50px] h-auto ml-[280px] mt-16 rotate-180"
+                />
+              </p>
+            </div>
+            <div className="absolute">
+              <p onClick={(e) => { e.preventDefault(); handleNextClick(); }}>
+                <Image
+                  src="/img/arrow_right.png"
+                  width={100}
+                  height={100}
+                  alt="arrow.png"
+                  className=" w-[50px] mt-16 ml-[1035px] h-auto"
+                />
+              </p>
+            </div>
       </div>
     </div>
   )
