@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import SearchBar from "@/components/common/searchBar";
+//import SearchBar from "@/components/common/searchBar";
 import Navbar from "@/components/common/navbar";
 
 const Header: React.FC = () => {
