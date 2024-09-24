@@ -4,7 +4,7 @@ import React from "react";
 
 const SearchBar: React.FC = () => {
   return (
-    <div>
+    <div className="">
       <label
         className="text-sm font-medium text-gray-900 sr-only dark:text-white"
       >
