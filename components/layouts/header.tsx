@@ -7,12 +7,11 @@ import Navbar from "@/components/common/navbar";
 
 const Header: React.FC = () => {
   return (
-    <div className="bg-[#000085] grid w-full grid-cols-3 relative items-center justify-between py-1 px-20">
-      <div className="flex w-full relative">
-        <Image alt="logo" src={"/img/logo.png"} width={200} height={100} className="" />
+    <div className="bg-[#000085] flex w-full flex-row items-center justify-between gap-20 py-4 px-32">
+      <div className="flex bg-[#00001D] rounded-lg p-5">
+        <Image alt="logo" src={"/img/logo.png"} width={300} height={100} />
       </div>
       <Navbar />
-      <SearchBar />
     </div>
   )
 }
