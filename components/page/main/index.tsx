@@ -6,6 +6,7 @@ import ReadMore from "./readMore";
 import Feature from "./feature";
 import Capability from "./capability";
 import Detail from "./detail";
+import Storage from "./storage";
 
 const Main: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Main: React.FC = () => {
       <Feature />
       <Capability />
       <Detail />
+      <Storage />
     </div>
   )
 }
