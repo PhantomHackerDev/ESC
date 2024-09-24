@@ -13,17 +13,17 @@ const ReadMore: React.FC = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + electron.length) % electron.length);
   };
   return (
-    <div className="flex flex-col w-full">
-      <div className="flex bg-cover bg-center flex-row justify-center py-10 items-center gap-5"
+    <div className="flex flex-row w-full">
+      <div className="flex bg-cover px-36 bg-center flex-row py-10 items-center gap-5"
         style={{
           backgroundImage: "url(/img/readmore.png)",
           width: "100%",
-          height: "450px",
+          height: "500px",
           backgroundSize: "100% 100%",
         }}
       >
-        <div className="flex flex-row justify-center  items-center">
-          <div className="flex flex-col gap-5">
+        <div className="flex flex-row justify-center items-center gap-16">
+          <div className="flex flex-col gap-">
             <p className="text-white text-4xl">
               No Thermal Runaway  No Fires<br/> 30,000+ Full Discharge/Recharge Cycles<br/> 20 - 30 Year Expected Lifespan<br/> UL310A Certified
             </p>
@@ -39,42 +39,40 @@ const ReadMore: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex ">
-            <div className="flex items-center justify-between ">
-              <div className="flex">
-                <Image
-                  src={`/img/${electron[currentIndex]}`}
-                  width={350}
-                  height={350}
-                  alt={`${electron[currentIndex]}`}
-                  className=""
-                />
-              </div>
-            </div>
+        </div>
+        <div className="flex flex-row justify-center items-center">
+          <div className="flex">
+            <p onClick={(e) => { e.preventDefault(); handlePrevClick(); }}>
+              <Image
+                src="/img/arrow_right.png"
+                width={100}
+                height={100}
+                alt="arrow.png"
+                className=" w-[50px] h-auto rotate-180"
+              />
+            </p>
+          </div>
+          <div className="flex">
+            <Image
+              src={`/img/${electron[currentIndex]}`}
+              width={350}
+              height={350}
+              alt={`${electron[currentIndex]}`}
+              className=""
+            />
+          </div>
+          <div className="flex">
+            <p onClick={(e) => { e.preventDefault(); handleNextClick(); }}>
+              <Image
+                src="/img/arrow_right.png"
+                width={100}
+                height={100}
+                alt="arrow.png"
+                className=" w-[50px] h-auto"
+              />
+            </p>
           </div>
         </div>
-            <div className="absolute">
-              <p onClick={(e) => { e.preventDefault(); handlePrevClick(); }}>
-                <Image
-                  src="/img/arrow_right.png"
-                  width={100}
-                  height={100}
-                  alt="arrow.png"
-                  className=" w-[50px] h-auto ml-[280px] mt-16 rotate-180"
-                />
-              </p>
-            </div>
-            <div className="absolute">
-              <p onClick={(e) => { e.preventDefault(); handleNextClick(); }}>
-                <Image
-                  src="/img/arrow_right.png"
-                  width={100}
-                  height={100}
-                  alt="arrow.png"
-                  className=" w-[50px] mt-16 ml-[1035px] h-auto"
-                />
-              </p>
-            </div>
       </div>
     </div>
   )
