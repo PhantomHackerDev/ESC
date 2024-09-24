@@ -5,6 +5,7 @@ import Header from "../../layouts/header";
 import ReadMore from "./readMore";
 import Feature from "./feature";
 import Capability from "./capability";
+import Detail from "./detail";
 
 const Main: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Main: React.FC = () => {
       <ReadMore />
       <Feature />
       <Capability />
+      <Detail />
     </div>
   )
 }
